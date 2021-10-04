@@ -51,7 +51,7 @@ nav ul li {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-white) !important;
-  border-top: 0.1875rem solid var(--primary-dark);
+  /* border-top: 0.1875rem solid var(--primary-dark); */
 }
 
 .navbar-brand {
@@ -85,7 +85,7 @@ nav ul li {
   background: url(wall-and-laptop-background.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -140,7 +140,7 @@ nav ul li {
   transition: .2s ease-in-out;
 }
 
-/************************* HEADER ********************************/
+/*-------- PARTICLES JS ---------------*/
 .tsparticles-canvas-el {
   position: absolute;
   height: 100vh;
@@ -375,6 +375,10 @@ nav ul li {
   cursor: pointer;
 }
 
+.popupbox-wrapper {
+  margin-top: 7rem;
+}
+
 /*------------ OVERFLOW BOX ------------------*/
 .portfolio-image-popupbox {
   width: 45rem;
@@ -413,6 +417,14 @@ nav ul li {
     width: 100%;
   }
 }
+
+@media(max-width: 375px) {
+  .popupbox-wrapper{
+    margin-top: 0;
+  }
+}
+
+
 
 @media(max-height: 570px) {
 .popupbox-wrapper {
@@ -515,7 +527,6 @@ nav ul li {
   }
 
   .success-message {
-    font-weight: 900;
     color: var(--primary-white);
     background: var(--primary-green);
   }
@@ -533,4 +544,26 @@ nav ul li {
   .contacts p {
     padding: 0 0.4rem;
   }
+}
+
+  /************************ FOOTER *********************************/
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
 }
