@@ -1,5 +1,6 @@
 import React from 'react'
 import Typed from 'react-typed'
+import { Link } from 'react-scroll'
 
 const Header = () => {
   return (
@@ -19,9 +20,9 @@ const Header = () => {
             'React/React Native Dev',
           ]}
         />
-        <a href='#' className='btn-main-offer'>
+        <Link to='contacts' smooth={true} href='#' className='btn-main-offer'>
           contact me
-        </a>
+        </Link>
       </div>
     </div>
   )
