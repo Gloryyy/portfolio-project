@@ -1,6 +1,7 @@
 import React from 'react'
 import ScreenHeading from '../utilities/ScreenHeading'
 import author from '../me.jpg'
+import { Link } from 'react-scroll'
 
 export default function AboutMe(props) {
   const SCREEN_CONSTSANTS = {
@@ -49,8 +50,19 @@ export default function AboutMe(props) {
               {renderHighlight()}
             </div>
             <div className='about-me-options'>
-              <button className='btn primary-btn'> Hire Me </button>
-              <a href='#' download='/assets/CV.pdf'>
+              <button className='btn primary-btn'>
+                {' '}
+                <Link
+                  to='contacts'
+                  smooth={true}
+                  offset={-100}
+                  href='#'
+                  className='btn-hire-me'
+                >
+                  Hire Me{' '}
+                </Link>
+              </button>
+              <a href='/assets/CV.pdf' download>
                 <button className='btn highlighted-btn'>Get Resume</button>
               </a>
             </div>

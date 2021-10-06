@@ -142,6 +142,15 @@ nav ul li {
   transition: .2s ease-in-out;
 }
 
+.btn-hire-me {
+  text-decoration: none;
+  color: var(--primary-white)
+}
+
+.btn-hire-me:hover {
+  color: var(--primary-red)
+}
+
 /*-------- PARTICLES JS ---------------*/
 .tsparticles-canvas-el {
   position: absolute;
@@ -248,9 +257,12 @@ nav ul li {
 
 .highlighted-btn {
   color: var(--primary-white)!important;
-
   font-size: 12px;
   background-color: #ff5823 !important;
+}
+
+.highlighted-btn:hover {
+  background-color: var(--primary-hover-red)!important;
 }
 
 /*IPAD PRO RESPONSIVENESS*/
@@ -278,6 +290,15 @@ nav ul li {
   .about-me-options button {
     width: 100%;
   }
+  .btn {
+  padding: 0.425rem 0 !important;
+}
+.primary-btn {
+  width: auto !important;
+}
+.highlighted-btn {
+  width: 100% !important;
+}
 }
 /* .photo-wrap {
   display: flex;

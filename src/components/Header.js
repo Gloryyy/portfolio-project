@@ -20,7 +20,13 @@ const Header = () => {
             'React/React Native Dev',
           ]}
         />
-        <Link to='contacts' smooth={true} href='#' className='btn-main-offer'>
+        <Link
+          to='contacts'
+          offset={1150}
+          smooth={true}
+          href='#'
+          className='btn-main-offer'
+        >
           contact me
         </Link>
       </div>

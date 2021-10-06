@@ -50,36 +50,35 @@ const Resume = (props) => {
 
   //here we have
   const programmingSkillsDetails = [
-    { skill: 'JavaScript', ratingPercentage: 85 },
-    { skill: 'React JS', ratingPercentage: 85 },
-    { skill: 'React Native', ratingPercentage: 85 },
-    { skill: 'Express JS', ratingPercentage: 89 },
-    { skill: 'Node JS', ratingPercentage: 89 },
+    { skill: 'JavaScript', ratingPercentage: 60 },
+    { skill: 'React JS', ratingPercentage: 75 },
+    { skill: 'React Native', ratingPercentage: 60 },
+    { skill: 'Express JS', ratingPercentage: 60 },
+    { skill: 'Node JS', ratingPercentage: 60 },
     { skill: 'Mongo Db', ratingPercentage: 70 },
-    { skill: 'Core Java', ratingPercentage: 80 },
-    { skill: 'HTML', ratingPercentage: 80 },
+    { skill: 'Bootstrap', ratingPercentage: 70 },
+    { skill: 'HTML', ratingPercentage: 75 },
     { skill: 'CSS', ratingPercentage: 80 },
   ]
 
   const projectsDetails = [
     {
-      title: 'Personal Portfolio Website',
-      duration: { fromDate: '2020', toDate: '2021' },
-      description:
-        'A Personal Portfolio website to showcase all my details and projects at one place.',
-      subHeading: 'Technologies Used: React JS, Bootsrap',
+      title: 'Covid-19 Tracker',
+      duration: { fromDate: 'Sep 2019', toDate: 'Oct 2019' },
+      description: 'shows the daily Corona statistics around the world.',
+      subHeading: 'Technologies Used: ReactJS, Firebase, Material-UI, CSS3',
     },
     {
-      title: 'Mobile E-shop ',
-      duration: { fromDate: '2020', toDate: '2021' },
+      title: 'Amazon Clone',
+      duration: { fromDate: 'Dec 2020', toDate: 'Jan 2021' },
       description:
-        'An ecommerce application designed to sell products online wth payment system integration',
+        'An ecommerce application designed to sell products online with payment system integration',
       subHeading:
-        'Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.',
+        'Technologies Used:  ReactJS, MongoDB, ExpressJs, NodeJs, Redux.',
     },
     {
       title: 'Ecommerce Website ',
-      duration: { fromDate: '2020', toDate: '2021' },
+      duration: { fromDate: 'Feb 2021', toDate: 'April 2021' },
       description:
         'Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe',
       subHeading:
@@ -90,23 +89,23 @@ const Resume = (props) => {
   const resumeDetails = [
     <div className='resume-screen-container' key='education'>
       <ResumeHeading
-        heading={'University of Legon Accra, Ghana'}
-        subHeading={'BACHELOR OF SCIENCE INFORMATION TECHNOLOGY'}
-        fromDate={'2014'}
-        toDate={'2018'}
+        heading={'Integration course and orientation course'}
+        subHeading={'VHS Krefeld'}
+        fromDate={'Jan 2016'}
+        toDate={'July 2016'}
       />
 
       <ResumeHeading
-        heading={'National Youth Service Corps'}
-        subHeading={'Ministry Of Science And Technogy. Uyo Akwa Ibom State'}
-        fromDate={'2019'}
-        toDate={'2020'}
+        heading={'German course'}
+        subHeading={'LearnArt Krefeld'}
+        fromDate={'Sep 2017'}
+        toDate={'Jan 2018'}
       />
       <ResumeHeading
-        heading={'High School '}
-        subHeading={'Command Secondary School Mbiri'}
-        fromDate={'2007'}
-        toDate={'2012'}
+        heading={'Certificate | Full Stack developer'}
+        subHeading={'Digital Career Institute'}
+        fromDate={'Nov 2019'}
+        toDate={'Dec 2020'}
       />
     </div>,
 
@@ -114,26 +113,21 @@ const Resume = (props) => {
     <div className='resume-screen-container' key='work-experience'>
       <div className='experience-container'>
         <ResumeHeading
-          heading={'Ehizeex Technoloy'}
-          subHeading={'FULL STACK DEVELOPER INTERN'}
-          fromDate={'2021'}
-          toDate={'Present'}
+          heading={'Active IT Recruitment'}
+          subHeading={'Frontend Developer INTERN'}
+          fromDate={'Sep 2020'}
+          toDate={'Nov 2020'}
         />
         <div className='experience-description'>
           <span className='resume-description-text'>
-            Currently working as MERN stack web and mobile developer and also an
-            online instructor on udemy.
+            Development of a 100% cloud-based CRM application (Customer
+            Relationship Management) from scratch.
           </span>
         </div>
         <div className='experience-description'>
           <span className='resume-description-text'>
-            - Developed an ecommerce website for client with the dashboard for
-            managing the products, managing reviews, users, payment etc. .
-          </span>
-          <br />
-          <span className='resume-description-text'>
-            - Integrated the web app with backend services to create new user
-            onboarding application with dynamic form content.{' '}
+            - Developed Login maske with full functionality using JWT (Json Web
+            Token) as well responsive layout.
           </span>
           <br />
           <span className='resume-description-text'>
@@ -181,8 +175,8 @@ const Resume = (props) => {
     /* Interests */
     <div className='resume-screen-container' key='interests'>
       <ResumeHeading
-        heading='Teaching'
-        description='Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing.'
+        heading='Sport'
+        description='Fitness is for me the most favourite sport, when I go to the gym I feel my self more motivated to accomplish my goals.'
       />
       <ResumeHeading
         heading='Music'
