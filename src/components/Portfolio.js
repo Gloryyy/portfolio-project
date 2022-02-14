@@ -1,15 +1,16 @@
-import React from 'react'
-import netflix from '../images/netflix.png'
-import covidTracker from '../images/covid-tracker.png'
-import shopify from '../images/shopify.png'
-import travelAdvisor from '../images/travel-advisor.png'
-import crownClothing from '../images/crwn-clothing.png'
+import React from 'react';
+import netflix from '../images/netflix.png';
+import covidTracker from '../images/covid-tracker.png';
+import shopify from '../images/shopify.png';
+import travelAdvisor from '../images/travel-advisor.png';
+import crownClothing from '../images/crwn-clothing.png';
+import gerichtRestaurant from '../images/gericht-restaurant.png';
 // FONTAWESOME IMPORTS
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearchPlus } from '@fortawesome/free-solid-svg-icons';
 // REACT POPUPBOX
-import { PopupboxManager, PopupboxContainer } from 'react-popupbox'
-import 'react-popupbox/dist/react-popupbox.css'
+import { PopupboxManager, PopupboxContainer } from 'react-popupbox';
+import 'react-popupbox/dist/react-popupbox.css';
 
 const Portfolio = () => {
   // Netflix
@@ -17,9 +18,9 @@ const Portfolio = () => {
     const content = (
       <>
         <img
-          className='portfolio-image-popupbox'
+          className="portfolio-image-popupbox"
           src={netflix}
-          alt='Netflix Clone Project...'
+          alt="Netflix Clone Project..."
         />
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque
@@ -27,15 +28,16 @@ const Portfolio = () => {
         </p>
         <b>Demo:</b>{' '}
         <a
-          className='hyper-link'
+          className="hyper-link"
           onClick={() => window.open('https://netflix-clone-2792a.web.app/')}
+          href="https://netflix-clone-2792a.web.app"
         >
           https://netflix-clone-2792a.web.app/
         </a>
       </>
-    )
-    PopupboxManager.open({ content })
-  }
+    );
+    PopupboxManager.open({ content });
+  };
 
   const popupboxConfigNetflix = {
     titleBar: {
@@ -44,16 +46,16 @@ const Portfolio = () => {
     },
     fadeIn: true,
     fadeInSpeed: 500,
-  }
+  };
 
   // Covid Tracker App
   const openPopupboxCovidTracker = () => {
     const content = (
       <>
         <img
-          className='portfolio-image-popupbox'
+          className="portfolio-image-popupbox"
           src={covidTracker}
-          alt='Covid tracker App Project...'
+          alt="Covid tracker App Project..."
         />
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque
@@ -61,27 +63,29 @@ const Portfolio = () => {
         </p>
         <b>Demo:</b>{' '}
         <a
-          className='hyper-link'
+          className="hyper-link"
           onClick={() =>
             window.open('https://covid-19-tracker-d81de.web.app/', '_blank')
           }
+          href="https://covid-19-tracker-d81de.web.app"
         >
           https://covid-19-tracker-d81de.web.app/
         </a>
         <br />
         <b>GitHub:</b>{' '}
         <a
-          className='hyper-link'
+          className="hyper-link"
           onClick={() =>
             window.open('https://github.com/Gloryyy/Covid-19_Tracker', '_blank')
           }
+          href="https://github.com/Gloryyy/Covid-19_Tracker"
         >
           https://github.com/Gloryyy/Covid-19_Tracker
         </a>
       </>
-    )
-    PopupboxManager.open({ content })
-  }
+    );
+    PopupboxManager.open({ content });
+  };
 
   const popupboxConfigCovidTracker = {
     titleBar: {
@@ -90,16 +94,16 @@ const Portfolio = () => {
     },
     fadeIn: true,
     fadeInSpeed: 500,
-  }
+  };
 
   // Shopify Project
   const openPopupboxShopify = () => {
     const content = (
       <>
         <img
-          className='portfolio-image-popupbox'
+          className="portfolio-image-popupbox"
           src={shopify}
-          alt='ecommerce Project...'
+          alt="ecommerce Project..."
         />
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque
@@ -107,20 +111,21 @@ const Portfolio = () => {
         </p>
         <b>GitHub:</b>{' '}
         <a
-          className='hyper-link'
+          className="hyper-link"
           onClick={() =>
             window.open(
               'https://github.com/Gloryyy/ecommerce-next-shopify',
               '_blank'
             )
           }
+          href="https://github.com/Gloryyy/ecommerce-next-shopify"
         >
           https://github.com/Gloryyy/ecommerce-next-shopify
         </a>
       </>
-    )
-    PopupboxManager.open({ content })
-  }
+    );
+    PopupboxManager.open({ content });
+  };
 
   const popupboxConfigShopify = {
     titleBar: {
@@ -129,16 +134,16 @@ const Portfolio = () => {
     },
     fadeIn: true,
     fadeInSpeed: 500,
-  }
+  };
 
   // Travel advisor Project
   const openPopupboxTravelAdvisor = () => {
     const content = (
       <>
         <img
-          className='portfolio-image-popupbox'
+          className="portfolio-image-popupbox"
           src={travelAdvisor}
-          alt='travel advisor'
+          alt="travel advisor"
         />
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque
@@ -146,27 +151,29 @@ const Portfolio = () => {
         </p>
         <b>Demo:</b>{' '}
         <a
-          className='hyper-link'
+          className="hyper-link"
           onClick={() =>
             window.open('https://travel-advisor-tracker.netlify.app/', '_blank')
           }
+          href="https://travel-advisor-tracker.netlify.app"
         >
           https://travel-advisor-tracker.netlify.app/
         </a>
         <br />
         <b>GitHub:</b>{' '}
         <a
-          className='hyper-link'
+          className="hyper-link"
           onClick={() =>
             window.open('https://github.com/Gloryyy/travel_advisor', '_blank')
           }
+          href="https://github.com/Gloryyy/travel_advisor"
         >
           https://github.com/Gloryyy/travel_advisor
         </a>
       </>
-    )
-    PopupboxManager.open({ content })
-  }
+    );
+    PopupboxManager.open({ content });
+  };
 
   const popupboxConfigTravelAdvisor = {
     titleBar: {
@@ -175,16 +182,16 @@ const Portfolio = () => {
     },
     fadeIn: true,
     fadeInSpeed: 500,
-  }
+  };
 
   // Crown Clothing App
   const openPopupboxCrownClothing = () => {
     const content = (
       <>
         <img
-          className='portfolio-image-popupbox'
+          className="portfolio-image-popupbox"
           src={crownClothing}
-          alt='Crown clothing App'
+          alt="Crown clothing App"
         />
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque
@@ -192,7 +199,7 @@ const Portfolio = () => {
         </p>
         <b>Demo:</b>{' '}
         <a
-          className='hyper-link'
+          className="hyper-link"
           onClick={() =>
             window.open(
               'https://cron-clothing-app-live.herokuapp.com/',
@@ -205,7 +212,7 @@ const Portfolio = () => {
         <br />
         <b>GitHub:</b>{' '}
         <a
-          className='hyper-link'
+          className="hyper-link"
           onClick={() =>
             window.open('https://github.com/Gloryyy/crwn-clothing', '_blank')
           }
@@ -213,9 +220,9 @@ const Portfolio = () => {
           https://github.com/Gloryyy/crwn-clothing
         </a>
       </>
-    )
-    PopupboxManager.open({ content })
-  }
+    );
+    PopupboxManager.open({ content });
+  };
 
   const popupboxConfigCrownClothing = {
     titleBar: {
@@ -224,66 +231,124 @@ const Portfolio = () => {
     },
     fadeIn: true,
     fadeInSpeed: 500,
-  }
+  };
+
+  // Gericht Restaurant Website
+  const openPopupboxRestaurant = () => {
+    const content = (
+      <>
+        <img
+          className="portfolio-image-popupbox"
+          src={gerichtRestaurant}
+          alt="Gericht Restaurant Website"
+        />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex cumque
+          illo est expedita quos adipisci suscipit unde itaque qui perferendis.
+        </p>
+        <b>Demo:</b>{' '}
+        <a
+          className="hyper-link"
+          onClick={() =>
+            window.open('https://gericht-restaurant.com/', '_blank')
+          }
+          href="https://gericht-restaurant.com"
+        >
+          https://gericht-restaurant.com
+        </a>
+        <br />
+        <b>GitHub:</b>{' '}
+        <a
+          className="hyper-link"
+          onClick={() =>
+            window.open('https://github.com/Gloryyy/crwn-clothing', '_blank')
+          }
+          href="https://github.com/Gloryyy/gericht-restaurant-ui"
+        >
+          https://github.com/Gloryyy/gericht-restaurant-ui
+        </a>
+      </>
+    );
+    PopupboxManager.open({ content });
+  };
+
+  const popupboxConfigRestaurant = {
+    titleBar: {
+      enable: true,
+      text: 'Gericht Restaurant Website.',
+    },
+    fadeIn: true,
+    fadeInSpeed: 500,
+  };
 
   return (
-    <div id='portfolio' className='portfolio-wrapper'>
-      <div className='container'>
-        <h1 className='text-uppercase text-center py-5'>portfolio</h1>
-        <div className='image-box-wrapper'>
-          <div className='portfolio-image-box' onClick={openPopupboxNetflix}>
+    <div id="portfolio" className="portfolio-wrapper">
+      <div className="container">
+        <h1 className="text-uppercase text-center py-5">portfolio</h1>
+        <div className="image-box-wrapper">
+          <div className="portfolio-image-box" onClick={openPopupboxNetflix}>
             <img
-              className='portfolio-image'
+              className="portfolio-image"
               src={netflix}
-              alt='Netflix Clone Project...'
+              alt="Netflix Clone Project..."
             />
-            <div className='overflow'></div>
-            <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
           {/* - */}
           <div
-            className='portfolio-image-box'
+            className="portfolio-image-box"
             onClick={openPopupboxCovidTracker}
           >
             <img
-              className='portfolio-image'
+              className="portfolio-image"
               src={covidTracker}
-              alt='City Guide Project...'
+              alt="City Guide Project..."
             />
-            <div className='overflow'></div>
-            <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
           {/* - */}
-          <div className='portfolio-image-box' onClick={openPopupboxShopify}>
-            <img className='portfolio-image' src={shopify} alt='shopify' />
-            <div className='overflow'></div>
-            <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
+          <div className="portfolio-image-box" onClick={openPopupboxShopify}>
+            <img className="portfolio-image" src={shopify} alt="shopify" />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
           {/* - */}
           <div
-            className='portfolio-image-box'
+            className="portfolio-image-box"
             onClick={openPopupboxTravelAdvisor}
           >
             <img
-              className='portfolio-image'
+              className="portfolio-image"
               src={travelAdvisor}
-              alt='travel advisor'
+              alt="travel advisor"
             />
-            <div className='overflow'></div>
-            <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
           {/* - */}
           <div
-            className='portfolio-image-box'
+            className="portfolio-image-box"
             onClick={openPopupboxCrownClothing}
           >
             <img
-              className='portfolio-image'
+              className="portfolio-image"
               src={crownClothing}
-              alt='Crown Clothing Project...'
+              alt="Crown Clothing Project..."
             />
-            <div className='overflow'></div>
-            <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+          </div>
+          {/* - */}
+          <div className="portfolio-image-box" onClick={openPopupboxRestaurant}>
+            <img
+              className="portfolio-image"
+              src={gerichtRestaurant}
+              alt="Gericht Restaurant Website..."
+            />
+            <div className="overflow"></div>
+            <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
         </div>
       </div>
@@ -292,8 +357,9 @@ const Portfolio = () => {
       <PopupboxContainer {...popupboxConfigShopify} />
       <PopupboxContainer {...popupboxConfigTravelAdvisor} />
       <PopupboxContainer {...popupboxConfigCrownClothing} />
+      <PopupboxContainer {...popupboxConfigRestaurant} />
     </div>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;
